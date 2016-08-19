@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="dist/css/modal.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Online shop</h1></div>
+    </header>
+    <div class="container">
+        <div class="product-info-wrapper">
+            <div class="product-image-wrapper">
+                <div class="product-image">
+                    <ul class="js-modal-trigger">
+                        <li>
+                            <img src="././images/product-image.jpg" alt="Leather Bomber Jacket" class="js-product-image" height="350" width="350">
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal">
+                    <div class="modal-canvas">
+                        <img class="modal-image" src="././images/product-image.jpg" alt="Leather Bomber Jacket" />
+                    </div>
+                    <div class="modal-close js-modal-close"></div>
+                </div>
+            </div>
+            <div class="product-details-wrapper">
+                <div class="product-name">
+                    <h2>Leather Bomber Jacket</h2>
+                </div>
+                <div class="product-price">
+                    125.00 GBP
+                </div>
+                <div class="product-stock">
+                    In Stock
+                </div>
+
+                <select name="" class="product-select-size">
+                    <option value="0" selected>Choose your size</option>
+                    <option value="0">6</option>
+                    <option value="0">8</option>
+                    <option value="0">10</option>
+                    <option value="0">12</option>
+                    <option value="0">14</option>
+                </select>
+
+                <div class="product-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut quam quis elit pretium accumsan. Maecenas ut nisl euismod, pretium lectus ac, tristique eros. Fusce vestibulum diam vel dolor suscipit fringilla. Vivamus lacus sapien, dictum eu commodo nec, fringilla eget urna. Morbi ut ligula neque. Vivamus vehicula nisi id justo placerat cursus.</p>
+                </div>
+                <div class="product-shop-wrapper">
+                    <div class="product-qty">
+                        <label for="qty">Qty</label>
+                        <input type="text" name="qty" id="qty" maxlength="12" value="1" title="Qty" class="qty">
+                    </div>
+                    <div class="add-to-cart">
+                        <button onclick="showAlert()"><span>Add to cart</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script>
+        function showAlert() {
+            alert("This is just a MODAL WINDOW demo! You won't be able to buy anything here.. sorry!!");
+        }
+    </script>
+</body>
+</html>

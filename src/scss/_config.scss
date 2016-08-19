@@ -1,0 +1,22 @@
+
+// Main Typographic Heading sizes
+// ------------------------------------------------
+$typography: (
+    'base-font-size': 14px,
+    'heading-one': 18px,
+    'heading-two': 18px,
+    'heading-three': 14px,
+    'heading-four': 14px,
+    'heading-five': 14px,
+    'heading-six': 14px
+);
+
+$base-font-size: map-get($typography, 'base-font-size');
+$base-font-family: 'Open Sans', Verdana, Arial, sans-serif;
+
+// Common breakpoints
+// ------------------------------------------------
+
+$breakpoint-small: 480px;
+$breakpoint-medium: 770px;
+$breakpoint-large: 1200px;

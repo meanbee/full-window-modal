@@ -1,0 +1,137 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body {
+  color: #636363;
+  font: 300 14px/1.5 "Open Sans", Verdana, Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+button {
+  padding: 10px;
+  background-color: #4F4F4F;
+  border: 0;
+  color: #fff;
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+  button span {
+    vertical-align: middle; }
+  button:hover, button:active {
+    background-color: #1C1C1C;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  button:focus {
+    outline: none; }
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 12px; }
+  select:focus {
+    outline: none; }
+
+.container,
+header {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 850px; }
+
+.container {
+  margin-top: 20px; }
+
+.logo {
+  border-bottom: 1px solid #e5e5e5; }
+
+.product-info-wrapper::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.product-image-wrapper,
+.product-details-wrapper {
+  float: left;
+  width: 100%; }
+  @media screen and (min-width: 770px) {
+    .product-image-wrapper,
+    .product-details-wrapper {
+      width: 50%; } }
+
+.product-image-wrapper {
+  text-align: center; }
+  @media screen and (min-width: 770px) {
+    .product-image-wrapper {
+      padding-right: 20px; } }
+
+.product-name {
+  font-weight: 700; }
+
+.product-price {
+  font-weight: 700; }
+
+.product-stock {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.product-select-size {
+  background: no-repeat 98% 50%/5% url("../../images/icon-arrow-down.svg");
+  border: 1px solid #e5e5e5;
+  color: #636363;
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+  width: 100%; }
+
+.product-description {
+  margin: 20px 0; }
+
+.product-shop-wrapper {
+  padding-top: 20px; }
+  .product-shop-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.product-qty,
+.add-to-cart {
+  float: left; }
+
+.product-qty {
+  height: 35px;
+  margin-right: 10px; }
+  .product-qty label {
+    vertical-align: middle; }
+
+.qty {
+  height: 100%;
+  margin-left: 5px;
+  padding: 5px;
+  width: 40px; }
+
+.add-to-cart {
+  max-width: 150px;
+  width: 100%; }
