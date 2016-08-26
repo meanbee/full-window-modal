@@ -62,7 +62,7 @@ header {
   max-width: 850px; }
 
 .container {
-  margin-top: 20px; }
+  margin: 20px auto 40px auto; }
 
 .logo {
   border-bottom: 1px solid #e5e5e5; }
@@ -98,7 +98,7 @@ header {
   text-transform: uppercase; }
 
 .product-select-size {
-  background: no-repeat 98% 50%/5% url("../../images/icon-arrow-down.svg");
+  background: no-repeat 98% 50%/24px url("../images/icon-arrow-down.svg");
   border: 1px solid #e5e5e5;
   color: #636363;
   font-family: "Open Sans", Verdana, Arial, sans-serif;

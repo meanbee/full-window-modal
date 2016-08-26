@@ -6,11 +6,12 @@
     $( function() {
         var $modalTrigger = $('.js-modal-trigger'),
             $modalClose = $('.js-modal-close'),
+            $modalOverlay = $('.js-modal-overlay'),
             $modalContent = $('.modal');
         
-        // This function will need to be refactored. We will turn it into it's own object.
         $modalTrigger.on('click', '.js-product-image', displayModal);
         $modalClose.on('click', displayModal);
+        $modalOverlay.on('click', displayModal);
 
         function displayModal() {
             var $dataLarge = $(this).attr('data-large');
